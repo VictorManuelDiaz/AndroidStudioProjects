@@ -1,0 +1,2 @@
+rootProject.name='My Application Adapter List'
+include ':app'
