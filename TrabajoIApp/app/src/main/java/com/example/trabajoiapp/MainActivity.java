@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     void addItemList() {
-        btAdd=(Button)findViewById(R.id.button);
-        etItem=(EditText)findViewById(R.id.editText);
+        btAdd=(Button)findViewById(R.id.btAgregar);
+        etItem=(EditText)findViewById(R.id.etAsignatura);
 
         btAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Campo vacío", Toast.LENGTH_LONG).show();
                 }
                 else {
-                    etItem=(EditText)findViewById(R.id.editText);
+                    etItem=(EditText)findViewById(R.id.etAsignatura);
                     subjects.add(etItem.getText().toString());
                     Adapter.notifyDataSetChanged();
                     etItem.setText("");

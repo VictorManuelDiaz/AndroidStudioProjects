@@ -42,7 +42,7 @@ public class MyAdapterList extends BaseAdapter {
             LayoutInflater layoutInflater=LayoutInflater.from(this.context);
             convertView=layoutInflater.inflate(R.layout.item_list, null);
             holder= new ViewHolder();
-            holder.textViewSubject=(TextView)convertView.findViewById(R.id.textViewList);
+            holder.textViewSubject=(TextView)convertView.findViewById(R.id.tvItem);
             convertView.setTag(holder);
         }
         else {
