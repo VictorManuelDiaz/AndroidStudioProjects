@@ -1,35 +1,46 @@
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:hint="Ingrese nombre y apellidos"
-            android:inputType="text"
-            android:id="@+id/etNames"/>
 
-        <Button
-            android:id="@+id/btAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Añadir" />
-        <Button
-            android:id="@+id/btCancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/btAdd"
-            android:layout_alignBottom="@+id/btAdd"
-            android:layout_alignRight="@+id/btAdd"
-            android:text="Cancelar" />
-    </androidx.appcompat.widget.LinearLayoutCompat>
-</androidx.appcompat.widget.LinearLayoutCompat>
+    <EditText
+        android:id="@+id/etNames"
+        android:layout_width="293dp"
+        android:layout_height="41dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Ingrese nombre y apellidos"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Añadir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNames" />
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btAdd"
+        android:layout_alignRight="@+id/btAdd"
+        android:layout_alignBottom="@+id/btAdd"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Cancelar"
+        app:layout_constraintStart_toEndOf="@+id/btAdd"
+        app:layout_constraintTop_toBottomOf="@+id/etNames" />
+</androidx.constraintlayout.widget.ConstraintLayout>
