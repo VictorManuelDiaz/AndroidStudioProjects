@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewAdd"
+        android:layout_width="77dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/outbox" />
+
+    <RelativeLayout
+        android:id="@+id/rlAsignatura"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAdd"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etAsignatura"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarder"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:text="Asignatura"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDescripcion"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAdd"
+        app:layout_constraintTop_toBottomOf="@+id/rlAsignatura">
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarder"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:text="Descripción"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDocente"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAdd"
+        app:layout_constraintTop_toBottomOf="@+id/rlDescripcion">
+
+        <EditText
+            android:id="@+id/etDocente"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarder"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:text="Docente"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDia"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAdd"
+        app:layout_constraintTop_toBottomOf="@+id/rlDocente">
+
+        <EditText
+            android:id="@+id/etDia"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarder"
+            android:inputType="text"
+            android:hint=""
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:text="Día"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlHora"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toEndOf="@+id/rlDia"
+        app:layout_constraintTop_toBottomOf="@+id/rlDocente">
+
+        <EditText
+            android:id="@+id/etHora"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarder"
+            android:hint="hh:mm:ss"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:text="Hora"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFecha"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAdd"
+        app:layout_constraintTop_toBottomOf="@+id/rlDia">
+
+        <EditText
+            android:id="@+id/etFecha"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarder"
+            android:hint="DD-MM-AAAA"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:text="Fecha"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Añadir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rlFecha" />
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btAdd"
+        android:layout_alignRight="@+id/btAdd"
+        android:layout_alignBottom="@+id/btAdd"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btAdd"
+        app:layout_constraintTop_toBottomOf="@id/rlFecha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
