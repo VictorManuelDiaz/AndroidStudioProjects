@@ -10,7 +10,10 @@ import com.example.myapplicationsqllite.Interfaces.AsignaturaDao;
 
 public abstract class AppDatabase extends RoomDatabase {
 
+    //Permisos para listar, eliminar, actualizar e insertar
+    //especificados en Dao
     public abstract AsignaturaDao asignaturaDao();
 
+    //Definiendo variable para gestor de la Base de Datos
     public static AppDatabase sInstance;
 }
