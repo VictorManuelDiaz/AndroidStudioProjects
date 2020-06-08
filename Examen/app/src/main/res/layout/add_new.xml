@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+    <ImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="77dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/picture" />
+
+    <RelativeLayout
+        android:id="@+id/rlName"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toEndOf="@+id/ivAdd"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarder"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:text="Nombre"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPrice"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toEndOf="@+id/ivAdd"
+        app:layout_constraintTop_toBottomOf="@+id/rlName">
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarder"
+            android:inputType="numberDecimal"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:text="Precio"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPresentation"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toEndOf="@+id/ivAdd"
+        app:layout_constraintTop_toBottomOf="@+id/rlPrice">
+
+        <EditText
+            android:id="@+id/etPresentation"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarder"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:text="Presentación"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLaboratory"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toEndOf="@+id/ivAdd"
+        app:layout_constraintTop_toBottomOf="@+id/rlPresentation">
+
+        <EditText
+            android:id="@+id/etLaboratory"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarder"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:text="Laboratorio"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlStock"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toEndOf="@+id/ivAdd"
+        app:layout_constraintTop_toBottomOf="@+id/rlLaboratory">
+
+        <EditText
+            android:id="@+id/etStock"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarder"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:text="Existencia"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Añadir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rlStock" />
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btAdd"
+        android:layout_alignRight="@+id/btAdd"
+        android:layout_alignBottom="@+id/btAdd"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toEndOf="@+id/btAdd"
+        app:layout_constraintTop_toBottomOf="@+id/rlStock" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
